@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Contenedor de Foto de Perfil -->
+        <FrameLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_green"
+                android:contentDescription="Imagen del contacto"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person" />
+
+            <ImageButton
+                android:id="@+id/btnAgregarFoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/bg_circle_green"
+                android:contentDescription="Agregar imagen"
+                android:padding="8dp"
+                android:src="@drawable/ic_add"
+                android:tint="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- Campo País -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="País"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spPais"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Campo Nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Nombre"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_input"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <!-- Campo Teléfono -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Teléfono"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_input"
+            android:inputType="phone"
+            android:paddingHorizontal="16dp"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <!-- Campo Nota -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Nota"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNota"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_nota"
+            android:gravity="top|start"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="12dp"
+            android:textColor="#333333" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#0B3C5D"
+            android:text="Guardar contacto"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Botón Ver Contactos -->
+        <Button
+            android:id="@+id/btnContactos"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Ver contactos"
+            android:textColor="#0B3C5D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
